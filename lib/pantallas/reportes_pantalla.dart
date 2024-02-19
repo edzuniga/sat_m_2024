@@ -6,8 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:sat_m/constantes/colores_constantes.dart';
 
 class ReportesPage extends StatefulWidget {
-  const ReportesPage({Key? key, required this.idPais, required this.rol})
-      : super(key: key);
+  const ReportesPage({super.key, required this.idPais, required this.rol});
 
   final int idPais;
   final int rol;

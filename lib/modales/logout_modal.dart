@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class LogoutModal extends StatelessWidget {
-  const LogoutModal({Key? key}) : super(key: key);
+  const LogoutModal({super.key});
 
   @override
   Widget build(BuildContext context) {

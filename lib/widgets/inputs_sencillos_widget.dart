@@ -17,8 +17,8 @@ class InputSencilloConValidacion extends StatelessWidget {
     required this.pregunta,
     this.placeholder,
     this.readOnly = false,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -51,8 +51,8 @@ class InputSencilloSinValidacion extends StatelessWidget {
     required this.controlador,
     required this.pregunta,
     this.placeholder,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -80,8 +80,8 @@ class InputSencilloSinValidacionSoloNumeros extends StatelessWidget {
     required this.pregunta,
     this.placeholder,
     required this.cuantosNumeros,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -111,8 +111,8 @@ class InputSencilloSinValidacionSinCuadroSoloNumeros extends StatelessWidget {
     required this.controlador,
     required this.cuantosNumeros,
     this.fok = false,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final TextEditingController controlador;
   final int cuantosNumeros;
@@ -142,8 +142,8 @@ class InputSencilloConValidacionSinCuadroSoloNumeros extends StatelessWidget {
     required this.controlador,
     required this.cuantosNumeros,
     this.fok = false,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final TextEditingController controlador;
   final int cuantosNumeros;
@@ -183,8 +183,8 @@ class InputSencilloSinValidacionSinCuadro extends StatelessWidget {
     required this.controlador,
     required this.pregunta,
     this.placeholder,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -212,8 +212,8 @@ class InputSencilloConValidacionSoloNumeros extends StatelessWidget {
     required this.cuantosNumeros,
     this.caso12Comunidades = false,
     this.condicionNinaNino = false,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -282,8 +282,8 @@ class InputTextAreaSinValidacion extends StatelessWidget {
     required this.controlador,
     required this.pregunta,
     this.placeholder,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -312,8 +312,8 @@ class InputTextAreaConValidacion extends StatelessWidget {
     required this.controlador,
     required this.pregunta,
     this.placeholder,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

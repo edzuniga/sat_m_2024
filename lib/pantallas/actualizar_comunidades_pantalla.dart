@@ -22,8 +22,7 @@ import 'package:sat_m/constantes/colores_constantes.dart';
 
 class ActualizarComunidadesPantalla extends StatefulWidget {
   const ActualizarComunidadesPantalla(
-      {required this.idPais, required this.codaleaRecibido, Key? key})
-      : super(key: key);
+      {required this.idPais, required this.codaleaRecibido, super.key});
 
   final String codaleaRecibido;
   final int idPais;
@@ -79,10 +78,8 @@ class _ActualizarComunidadesPantallaState
         break;
     }
 
-    return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
+    return PopScope(
+      canPop: false,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kNaranjaPrincipal,

@@ -25,8 +25,7 @@ import 'package:sat_m/widgets/inputs_sencillos_widget.dart';
 
 class ActualizarFamiliaFormulario extends StatefulWidget {
   const ActualizarFamiliaFormulario(
-      {required this.idPais, required this.codaleaRecibido, Key? key})
-      : super(key: key);
+      {required this.idPais, required this.codaleaRecibido, super.key});
 
   final String codaleaRecibido;
   final int idPais;
@@ -132,10 +131,8 @@ class _ActualizarFamiliaFormularioState
         .map((p35) => MultiSelectItem<MultiSelectClass>(p35, p35.dato))
         .toList();
 
-    return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
+    return PopScope(
+      canPop: false,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kNaranjaPrincipal,

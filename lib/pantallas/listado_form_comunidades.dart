@@ -17,7 +17,7 @@ import 'package:sat_m/providers/condiciones_comunidades_provider.dart';
 import 'package:sat_m/providers/satm_comunidades_provider.dart';
 
 class ListadoFormComunidades extends StatefulWidget {
-  const ListadoFormComunidades({Key? key}) : super(key: key);
+  const ListadoFormComunidades({super.key});
 
   @override
   State<ListadoFormComunidades> createState() => _ListadoFormComunidadesState();

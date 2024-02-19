@@ -18,8 +18,7 @@ import 'package:sat_m/widgets/inputs_sencillos_widget.dart';
 
 class FormularioMiembrosMigrantes extends StatefulWidget {
   const FormularioMiembrosMigrantes(
-      {required this.codaleaBoleta, required this.idPais, Key? key})
-      : super(key: key);
+      {required this.codaleaBoleta, required this.idPais, super.key});
 
   final int idPais;
   final String codaleaBoleta;
@@ -62,10 +61,8 @@ class _FormularioComunidadesState extends State<FormularioMiembrosMigrantes> {
     var condicionesProvider =
         Provider.of<MiembrosMigrantesCondicionesProvider>(context);
 
-    return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
+    return PopScope(
+      canPop: false,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kNaranjaPrincipal,

@@ -24,7 +24,7 @@ import 'package:sat_m/widgets/card_dashboard_widget.dart';
 import 'package:sat_m/widgets/tarjetita_widget.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -44,10 +44,8 @@ class _HomePageState extends State<HomePage> {
     //Iniciar provider de Sincronizar
     var sincronizarProvider = Provider.of<SincronizarProvider>(context);
 
-    return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
+    return PopScope(
+      canPop: false,
       child: FutureBuilder(
           future: Future.wait([
             DatabaseSatM.instance.obtenerUsuarios(),

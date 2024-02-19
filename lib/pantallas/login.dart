@@ -23,7 +23,7 @@ import 'package:sat_m/requests/login_request.dart';
 import 'package:sat_m/widgets/login_input_widget.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();

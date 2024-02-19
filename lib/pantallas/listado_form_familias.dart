@@ -19,7 +19,7 @@ import 'package:sat_m/providers/condiciones_familias_provider.dart';
 import 'package:sat_m/providers/satm_familias_provider.dart';
 
 class ListadoFormFamilias extends StatefulWidget {
-  const ListadoFormFamilias({Key? key}) : super(key: key);
+  const ListadoFormFamilias({super.key});
 
   @override
   State<ListadoFormFamilias> createState() => _ListadoFormFamiliasState();

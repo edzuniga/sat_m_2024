@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class BorrarModal extends StatelessWidget {
-  const BorrarModal({Key? key}) : super(key: key);
+  const BorrarModal({super.key});
 
   @override
   Widget build(BuildContext context) {

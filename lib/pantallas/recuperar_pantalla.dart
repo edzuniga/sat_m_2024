@@ -9,7 +9,7 @@ import 'package:sat_m/requests/recuperar_contrasena_request.dart';
 import 'package:sat_m/widgets/login_input_widget.dart';
 
 class RecuperarPantalla extends StatefulWidget {
-  const RecuperarPantalla({Key? key}) : super(key: key);
+  const RecuperarPantalla({super.key});
 
   @override
   State<RecuperarPantalla> createState() => _RecuperarPantallaState();
@@ -40,10 +40,8 @@ class _RecuperarPantallaState extends State<RecuperarPantalla> {
           ],
         ),
       ),
-      child: WillPopScope(
-        onWillPop: () async {
-          return false;
-        },
+      child: PopScope(
+        canPop: false,
         child: Scaffold(
             backgroundColor: Colors.transparent,
             body: (recuperarProvider.esperandoRecuperacion)

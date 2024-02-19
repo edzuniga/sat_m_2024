@@ -9,7 +9,7 @@ import 'package:sat_m/pantallas/login.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingMenuPantalla extends StatefulWidget {
-  const OnboardingMenuPantalla({Key? key}) : super(key: key);
+  const OnboardingMenuPantalla({super.key});
 
   @override
   State<OnboardingMenuPantalla> createState() => _OnboardingMenuPantallaState();

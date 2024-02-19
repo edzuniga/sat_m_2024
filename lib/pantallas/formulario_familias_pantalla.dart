@@ -13,8 +13,6 @@ import 'package:sat_m/constantes/colores_constantes.dart';
 import 'package:sat_m/funciones/string_multiselects.dart';
 import 'package:sat_m/modales/permiso_ubicacion.dart';
 import 'package:sat_m/modales/salir_formulario_modal.dart';
-//import 'package:sat_m/modelos/limites_propensiones_modelo.dart';
-//import 'package:sat_m/modelos/familias_miembros_modelo.dart';
 import 'package:sat_m/modelos/satm_familias_modelo.dart';
 import 'package:sat_m/providers/condiciones_familias_provider.dart';
 import 'package:sat_m/providers/indice_pobreza_provider.dart';
@@ -24,7 +22,7 @@ import 'package:sat_m/widgets/dropdowns_widget.dart';
 import 'package:sat_m/widgets/inputs_sencillos_widget.dart';
 
 class FormularioFamilias extends StatefulWidget {
-  const FormularioFamilias({required this.idPais, Key? key}) : super(key: key);
+  const FormularioFamilias({required this.idPais, super.key});
 
   final int idPais;
 
@@ -33,14 +31,6 @@ class FormularioFamilias extends StatefulWidget {
 }
 
 class _FormularioFamiliasState extends State<FormularioFamilias> {
-  //Listas para los campos dinámicos de la pregunta 25
-  //final List<TextEditingController> _controladoresListado = [];
-  //final List<String?> _sexoListado = [];
-  //final List<String?> _haceCuantoViajoListado = [];
-  //final List<String?> _seEncuentraEnUSAListado = [];
-  //final List<String?> _p26Listado = [];
-  //final List<Widget> _inputsListado = [];
-
   //Llave del formulario
   final _llave = GlobalKey<FormState>();
 
@@ -123,10 +113,8 @@ class _FormularioFamiliasState extends State<FormularioFamilias> {
         .map((p35) => MultiSelectItem<MultiSelectClass>(p35, p35.dato))
         .toList();
 
-    return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
+    return PopScope(
+      canPop: false,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kNaranjaPrincipal,

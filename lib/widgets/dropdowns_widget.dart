@@ -29,8 +29,8 @@ class DropdownSencillo extends StatefulWidget {
     required this.listado,
     this.habilitado = true,
     this.placeholder,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<DropdownSencillo> createState() => _DropdownSencilloState();

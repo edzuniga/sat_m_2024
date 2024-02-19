@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.13.1
-  flutter_localization: ^0.1.12
+  flutter_localization: ^0.2.0
   flutter_native_splash: ^2.3.2
   flutter_slidable: ^3.0.0
   flutter_svg: ^2.0.7
@@ -21,7 +21,7 @@ dependencies:
   http: ^1.1.0
   intl: ^0.18.0
   location: ^5.0.0
-  lottie: ^2.4.0
+  lottie: ^3.0.0
   multi_select_flutter: ^4.1.3
   path: ^1.8.3
   path_provider: ^2.0.15
@@ -35,7 +35,7 @@ dependencies:
 
 dev_dependencies:
   change_app_package_name: ^1.1.0
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
   flutter_test:
     sdk: flutter
 

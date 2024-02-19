@@ -18,8 +18,7 @@ import 'package:sat_m/providers/condiciones_miembros_migrantes_provider.dart';
 import 'package:sat_m/providers/miembros_migrantes_provider.dart';
 
 class ListadoMiembrosMigrantes extends StatefulWidget {
-  const ListadoMiembrosMigrantes({required this.codaleaBoleta, Key? key})
-      : super(key: key);
+  const ListadoMiembrosMigrantes({required this.codaleaBoleta, super.key});
 
   final String codaleaBoleta;
 

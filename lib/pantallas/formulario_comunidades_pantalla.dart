@@ -22,8 +22,7 @@ import 'package:sat_m/constantes/colores_constantes.dart';
 import 'package:sat_m/modales/salir_formulario_modal.dart';
 
 class FormularioComunidades extends StatefulWidget {
-  const FormularioComunidades({required this.idPais, Key? key})
-      : super(key: key);
+  const FormularioComunidades({required this.idPais, super.key});
 
   final int idPais;
 
@@ -116,10 +115,8 @@ class _FormularioComunidadesState extends State<FormularioComunidades> {
     var condicionesProvider =
         Provider.of<CondicionesComunidadesProvider>(context);
 
-    return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
+    return PopScope(
+      canPop: false,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: kNaranjaPrincipal,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class SalirFormularioModal extends StatelessWidget {
-  const SalirFormularioModal({Key? key}) : super(key: key);
+  const SalirFormularioModal({super.key});
 
   @override
   Widget build(BuildContext context) {

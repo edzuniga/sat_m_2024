@@ -7,7 +7,7 @@ import 'package:sat_m/constantes/colores_constantes.dart';
 import 'package:sat_m/providers/sincronizar_provider.dart';
 
 class SincronizarModal extends StatefulWidget {
-  const SincronizarModal({Key? key}) : super(key: key);
+  const SincronizarModal({super.key});
 
   @override
   State<SincronizarModal> createState() => _SincronizarModalState();
